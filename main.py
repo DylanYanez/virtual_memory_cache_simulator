@@ -108,7 +108,7 @@ pte_bits = page_bits + 1
 # Total RAM for Page Table(s)
 total_ram = (PTE_ENTRIES_PER_PROCESS * num_trace_files * pte_bits) / 8
 
-# --- MILESTONE 1: OUTPUT ---
+# MILESTONE 1: OUTPUT
 print('Cache Simulator - CS 3853 - Team #17') # Use your team number
 
 instructions_str = 'All' if instructions == -1 else str(instructions)
@@ -143,7 +143,7 @@ print(f"{'Total RAM for Page Table(s):':<32}{total_ram:.0f} bytes (512K entries 
 
 print('\n' + '---' * 20 + '\n')
 
-# MILESTONE 2: VIRTUAL MEMORY SIMULATION LOGIC
+# MILESTONE 2 VIRTUAL MEMORY SIMULATION LOGIC
 pagesAvailable = pages - system_pages # Total pool of pages for ALL user processes
 
 # Shared pool of physical page numbers
