@@ -1,0 +1,75 @@
+Cache Simulator - CS 3853 - Team #17
+
+Trace File(s):
+	Corruption2.trc
+
+***** Cache Input Parameters *****
+Cache Size:                     1024 KB
+Block Size:                     64 bytes
+Associativity:                  4
+Replacement Policy:             Random
+Physical Memory:                1024 MB
+Percent Memory Used by System:  0.0%
+Instructions / Time Slice:      All
+
+***** Cache Calculated Values *****
+Total # Blocks:                 16384
+Tag Size:                       12 bits
+Index Size:                     12 bits
+Total # Rows:                   4096
+Overhead Size:                  26624 bytes
+Implementation Memory Size:     1050.00 KB (1075200 bytes)
+Cost:                           $73.50 @ $0.07 per KB
+
+***** Physical Memory Calculated Values *****
+Number of Physical Pages:       262144
+Number of Pages for System:     0
+Size of Page Table Entry:       19 bits
+Total RAM for Page Table(s):    1245184 bytes
+
+***** VIRTUAL MEMORY SIMULATION RESULTS *****
+
+Physical Pages Used By SYSTEM:  0
+Pages Available to User:        262144
+
+Virtual Pages Mapped:           453078
+        ------------------------------
+        Page Table Hits:        452589
+
+        Pages From Free:        489
+
+        Total Page Faults:      0
+
+
+Page Table Usage Per Process:
+------------------------------
+[0] Corruption2.trc:
+        Used Page Table Entries: 489 (0.09%)
+        Page Table Wasted: 1244023 bytes
+
+***** CACHE SIMULATION RESULTS *****
+Total Cache Accesses:   453078
+
+--- Instruction Bytes:  927404
+
+--- SrcDst Bytes:       394760
+
+Cache Hits:             449536
+
+Cache Misses            3542
+
+--- Compulsory Misses:  3540
+
+--- Conflict Misses     2
+
+
+
+***** ***** CACHE HIT & MISS RATE: ***** *****
+
+
+Hit Rate:               99.2182%
+Miss Rate:              0.7818%
+CPI:                    4.23 Cycles/Instruction (1285683)
+Unused Cache Space:     802.75 KB / 1024 KB = 78.39% Waste: $56.19/chip
+
+Unused Cache Blocks:    12844 / 16384

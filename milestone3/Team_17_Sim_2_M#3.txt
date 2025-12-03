@@ -1,0 +1,75 @@
+Cache Simulator - CS 3853 - Team #17
+
+Trace File(s):
+	A-9_new_trunk1.trc
+
+***** Cache Input Parameters *****
+Cache Size:                     256 KB
+Block Size:                     16 bytes
+Associativity:                  4
+Replacement Policy:             Round Robin
+Physical Memory:                1024 MB
+Percent Memory Used by System:  0.0%
+Instructions / Time Slice:      All
+
+***** Cache Calculated Values *****
+Total # Blocks:                 16384
+Tag Size:                       14 bits
+Index Size:                     12 bits
+Total # Rows:                   4096
+Overhead Size:                  30720 bytes
+Implementation Memory Size:     286.00 KB (292864 bytes)
+Cost:                           $20.02 @ $0.07 per KB
+
+***** Physical Memory Calculated Values *****
+Number of Physical Pages:       262144
+Number of Pages for System:     0
+Size of Page Table Entry:       19 bits
+Total RAM for Page Table(s):    1245184 bytes
+
+***** VIRTUAL MEMORY SIMULATION RESULTS *****
+
+Physical Pages Used By SYSTEM:  0
+Pages Available to User:        262144
+
+Virtual Pages Mapped:           144663
+        ------------------------------
+        Page Table Hits:        144326
+
+        Pages From Free:        337
+
+        Total Page Faults:      0
+
+
+Page Table Usage Per Process:
+------------------------------
+[0] A-9_new_trunk1.trc:
+        Used Page Table Entries: 337 (0.06%)
+        Page Table Wasted: 1244384 bytes
+
+***** CACHE SIMULATION RESULTS *****
+Total Cache Accesses:   144663
+
+--- Instruction Bytes:  280818
+
+--- SrcDst Bytes:       115252
+
+Cache Hits:             139454
+
+Cache Misses            5209
+
+--- Compulsory Misses:  5141
+
+--- Conflict Misses     68
+
+
+
+***** ***** CACHE HIT & MISS RATE: ***** *****
+
+
+Hit Rate:               96.3992%
+Miss Rate:              3.6008%
+CPI:                    4.30 Cycles/Instruction (419831)
+Unused Cache Space:     175.67 KB / 256 KB = 68.62% Waste: $12.30/chip
+
+Unused Cache Blocks:    11243 / 16384
