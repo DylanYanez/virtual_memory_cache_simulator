@@ -16,7 +16,7 @@ block_sizes = [8, 16, 64]
 policies = ["RR", "RND"]
 associativity = 4  # 4-way for the main comparison
 
-output_csv = "experiment_results.csv"
+output_csv = "results.csv"
 
 def run_simulation():
     with open(output_csv, "w", newline="") as csvfile:
@@ -33,7 +33,7 @@ def run_simulation():
 
                         # Note: Uses -n -1 to run the whole file
                         cmd = [
-                            "python", "VMCacheSize.py",
+                            "python", "main.py",
                             "-s", str(size),
                             "-b", str(block),
                             "-a", str(associativity),
@@ -64,7 +64,7 @@ def run_simulation():
                         except Exception as e:
                             print(f"Failed on {trace}: {e}")
 
-    print("Done! written to experiment_results.csv")
+    print("Done! written to results.csv")
 
 if __name__ == "__main__":
     run_simulation()
